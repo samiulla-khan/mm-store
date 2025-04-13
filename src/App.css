@@ -1,38 +1,269 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Font Family Class Names Starts Here*/
+.poppins-thin {
+  font-weight: 100;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.poppins-extralight {
+  font-weight: 200;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.poppins-light {
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Font Family Class Names Ends Here*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #004d40;
+  --lightgreen: #a9ba5a;
+  --white: #fff;
+  --lightgray: #a9a9a9;
+  --lightblue: #56a9ff;
+  --black: #000;
+}
+
+.header-section {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.logo-section img {
+  max-width: 70px;
+  max-height: auto;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.navbar-nav .nav-link,
+.navbar-collapse>div a,
+.navbar-collapse>div span {
+  color: var(--white);
+  /* font-size: 1.2rem; */
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--lightgreen);
+  cursor: pointer;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: var(--green);
+  color: var(--lightgreen);
+}
+
+.form-control:focus {
+  border-color: var(--lightgreen) !important;
+}
+
+button.navbar-toggler {
+  border: 2px solid #000;
+}
+
+.slider-section{
+  background-image: radial-gradient(circle, #ffc40089, #ff910089, #004d4089);
+}
+.slider-section .slides .slide .slider-image-block img{
+  max-width: 400px;
+  min-width: 400px;
+  width: 100%;
+  height: auto;
+  padding: 16px;
+}
+
+.slider-section .slides .slide {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.slider-section .slides .slide.active {
+  opacity: 1;
+}
+.slider-section .slides .slide .slider-content-block h1{
+    color: var(--green);
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 100px;
+    text-shadow: 2px 2px 2px var(--lightgreen);
+
+}
+
+.slider-section {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.slides-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.slides-wrapper .slider-controls{
+  position: static;
+}
+.slides-wrapper .arrows{
+  position: absolute;
+  top: 50%;
+}
+.slides-wrapper .arrows.prev-arrow{
+  left: 0;
+}
+.slides-wrapper .arrows.next-arrow{
+  right: 0;
+}
+
+.slide.active {
+  transform: translate(10px, 10px);
+  transition: 0.5s ease in-out;
+}
+
+.arrows{
+  background-color: var(--green);
+    color: var(--white);
+    /* border: none; */
+    border: 0.7px solid var(--lightgreen);
+    padding: 5px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.products-container{
+  margin-bottom: 50px;
+}
+
+.card{
+  margin: 12px 0;
+  border: none !important;
+  background: #f5f5f589;
+  box-shadow: 0 0 6px -1px #80808089;
+}
+
+.card > img{
+  padding: 16px;
+}
+
+
+.btn-green{
+  background-color: var(--green) !important;
+  color: var(--white) !important;
+  margin-top: 12px;
+}
+.btn-green:hover{
+  background-color: var(--lightgreen) !important;
+  color: var(--black) !important;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .navbar-nav .nav-item:nth-child(1) {
+    margin-top: 12px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .navbar-nav .nav-item {
+    margin-bottom: 12px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar-collapse>div {
+    margin-bottom: 12px;
   }
+  .slider-section .slides .slide .slider-content-block {
+    padding: 16px;
+  }
+  .slider-section .slides .slide .slider-content-block h1{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
 }
