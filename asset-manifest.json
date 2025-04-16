@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mm-store/static/css/main.c4e83ad9.css",
+    "main.css": "/mm-store/static/css/main.f72b74b1.css",
     "main.js": "/mm-store/static/js/main.8cbd4f27.js",
     "static/js/453.ed3810f9.chunk.js": "/mm-store/static/js/453.ed3810f9.chunk.js",
     "index.html": "/mm-store/index.html",
-    "main.c4e83ad9.css.map": "/mm-store/static/css/main.c4e83ad9.css.map",
+    "main.f72b74b1.css.map": "/mm-store/static/css/main.f72b74b1.css.map",
     "main.8cbd4f27.js.map": "/mm-store/static/js/main.8cbd4f27.js.map",
     "453.ed3810f9.chunk.js.map": "/mm-store/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4e83ad9.css",
+    "static/css/main.f72b74b1.css",
     "static/js/main.8cbd4f27.js"
   ]
 }
