@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
     return (
 
-        <div class="footer-section">
+        <div className="footer-section">
             <div className="container">
                 <div className="col-12 d-flex flex-column align-items-center justify-content-center pt-5">
                     <p className="poppins-semibold">This is footer section.</p>
@@ -26,8 +26,8 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div class="footer-copyright">
-                <p>copyright ©2023 </p>
+            <div className="footer-copyright">
+                <p>copyright ©2024 </p>
             </div>
         </div>
 

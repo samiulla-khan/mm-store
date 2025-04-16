@@ -1,20 +1,19 @@
 import React from "react";
-import '../App';
-import menData from '../api/menData.js'
+import womenData from "../api/womenData";
 import { Link } from "react-router-dom";
-function MensMiniComponent() {
-    // let data = menData.slice(0, 6);
-    let data = [...menData].sort(() => 0.5 - Math.random()).slice(0, 4);
+
+function WomensMiniComponent() {
+    let data = [...womenData].sort(() => 0.5 - Math.random()).slice(0, 4);
     return (
         <div className="container">
             <div className="products-container">
                 <section>
                     <div className="row">
                         <div className="col-10">
-                            <h4 className="poppins-bold">Men's Fashion</h4>
+                            <h4 className="poppins-bold">Womens's Fashion</h4>
                         </div>
                         <div className="col-2 d-flex align-items-center justify-content-end">
-                            <Link to="/mensproducts" className="poppins-bold goto-arrow" style={{ textDecoration: 'none' }}>
+                            <Link to="/womensproducts" className="poppins-bold goto-arrow" style={{ textDecoration: 'none' }}>
                                 &#8250;
                             </Link>
                         </div>
@@ -49,4 +48,4 @@ function MensMiniComponent() {
     )
 }
 
-export default MensMiniComponent;
+export default WomensMiniComponent;

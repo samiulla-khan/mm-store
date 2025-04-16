@@ -151,7 +151,8 @@ const menData = [{
     "currency": "INR",
     "color": "Black",
     "gender": "Men",
-    "quantity": 3
+    "quantity": 3,
+    "description": "A timeless classic blazer suitable for both professional and smart-casual looks."
 },
 {
     "id": 14,
@@ -162,7 +163,8 @@ const menData = [{
     "currency": "INR",
     "color": "Black",
     "gender": "Men",
-    "quantity": 2
+    "quantity": 2,
+    "description": "A comfortable and stylish sporty t-shirt with moisture-wicking fabric."
 },
 {
     "id": 15,
@@ -173,7 +175,8 @@ const menData = [{
     "currency": "INR",
     "color": "Green",
     "gender": "Men",
-    "quantity": 1
+    "quantity": 1,
+    "description": "A classic fit dress shirt made from high-quality fabric, suitable for formal occasions."
 },
 {
     "id": 16,
@@ -184,7 +187,8 @@ const menData = [{
     "currency": "INR",
     "color": "Blue",
     "gender": "Men",
-    "quantity": 2
+    "quantity": 2,
+    "description": "Slim fit jeans with a modern look, perfect for casual outings."
 },
 {
     "id": 17,
@@ -195,7 +199,8 @@ const menData = [{
     "currency": "INR",
     "color": "Grey",
     "gender": "Men",
-    "quantity": 1
+    "quantity": 1,
+    "description": "A classic polo shirt with the iconic Ralph Lauren logo, ideal for a refined casual look."
 },
 {
     "id": 18,
@@ -206,7 +211,8 @@ const menData = [{
     "currency": "INR",
     "color": "Black",
     "gender": "Men",
-    "quantity": 7
+    "quantity": 7,
+    "description": "A versatile softshell jacket designed for outdoor activities and everyday wear."
 },
 {
     "id": 19,
@@ -217,7 +223,8 @@ const menData = [{
     "currency": "INR",
     "color": "Purple",
     "gender": "Men",
-    "quantity": 1
+    "quantity": 1,
+    "description": "Lightweight and breathable mesh shorts for workouts and active lifestyles."
 },
 {
     "id": 20,
@@ -228,7 +235,8 @@ const menData = [{
     "currency": "INR",
     "color": "White",
     "gender": "Men",
-    "quantity": 2
+    "quantity": 2,
+    "description": "A classic crewneck sweater made from soft and comfortable materials."
 },
 {
     "id": 21,
@@ -239,7 +247,8 @@ const menData = [{
     "currency": "INR",
     "color": "Red",
     "gender": "Men",
-    "quantity": 2
+    "quantity": 2,
+    "description": "A modern-fit suit crafted with attention to detail, perfect for formal occasions."
 },
 {
     "id": 22,
@@ -250,7 +259,8 @@ const menData = [{
     "currency": "INR",
     "color": "Blue",
     "gender": "Men",
-    "quantity": 0
+    "quantity": 0,
+    "description": "A comfortable and stylish hoodie with the Adidas logo, suitable for everyday wear."
 },
 {
     "id": 23,
@@ -261,7 +271,8 @@ const menData = [{
     "currency": "INR",
     "color": "Grey",
     "gender": "Men",
-    "quantity": 2
+    "quantity": 2,
+    "description": "Versatile chino pants with a modern slim fit, suitable for casual and semi-formal occasions."
 },
 {
     "id": 24,
@@ -272,7 +283,8 @@ const menData = [{
     "currency": "INR",
     "color": "Grey",
     "gender": "Men",
-    "quantity": 3
+    "quantity": 3,
+    "description": "Durable and comfortable swim trunks designed for performance and comfort in the water."
 },
 {
     "id": 25,
@@ -283,7 +295,8 @@ const menData = [{
     "currency": "INR",
     "color": "Red",
     "gender": "Men",
-    "quantity": 0
+    "quantity": 0,
+    "description": "A timeless classic blazer suitable for both professional and smart-casual looks."
 },
 {
     "id": 26,
@@ -294,7 +307,8 @@ const menData = [{
     "currency": "INR",
     "color": "White",
     "gender": "Men",
-    "quantity": 1
+    "quantity": 1,
+    "description": "A timeless classic blazer suitable for both professional and smart-casual looks."
 },
 {
     "id": 27,
@@ -305,7 +319,8 @@ const menData = [{
     "currency": "INR",
     "color": "Grey",
     "gender": "Men",
-    "quantity": 0
+    "quantity": 0,
+    "description": "A classic fit dress shirt made from high-quality fabric, suitable for formal occasions."
 },
 ]
 

@@ -152,6 +152,7 @@ button.navbar-toggler {
 
 .slider-section{
   background-image: radial-gradient(circle, #ffc40089, #ff910089, #004d4089);
+  margin-top: 75px;
 }
 .slider-section .slides .slide .slider-image-block img{
   max-width: 400px;
@@ -222,6 +223,13 @@ button.navbar-toggler {
 
 .products-container{
   margin-bottom: 50px;
+  border: 1px solid var(--lightgreen);
+  padding: 20px;
+  border-radius: 5px;
+}
+.products-container h4.poppins-bold{
+  color: var(--green);
+  text-shadow: 2px 6px 5px var(--lightgreen);
 }
 
 .card{
@@ -240,6 +248,7 @@ button.navbar-toggler {
   background-color: var(--green) !important;
   color: var(--white) !important;
   margin-top: 12px;
+  font-size: 13px !important;
 }
 .btn-green:hover{
   background-color: var(--lightgreen) !important;
@@ -255,7 +264,7 @@ button.navbar-toggler {
   height: 30px;
   text-align: center;
   align-self: stretch;
-  line-height: 24px;
+  line-height: 22px;
 }
 .goto-arrow:hover{
   background-color: var(--lightgreen);
@@ -366,5 +375,25 @@ button.navbar-toggler {
     font-size: 40px;
     line-height: 50px;
   }
+
+  .products-container input.form-control{
+    width: 100%;
+  }
+
+  .slider-section .slides .slide .slider-image-block img{
+    max-width: 100%;
+    min-width: 100%;
+    padding: 16px;
+  }
+
+  .btn-green{
+    font-size: 13px !important;
+  }
   
+}
+
+@media (min-width: 576px) and (max-width: 998px) {
+  .products-container input.form-control{
+    width: 75%;
+  }
 }

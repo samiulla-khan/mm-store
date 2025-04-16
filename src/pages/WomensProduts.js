@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
-import menData from "../api/menData";
+import womenData from "../api/womenData";
 import Footer from "../components/Footer";
 
 const checkBox = {
@@ -8,83 +8,62 @@ const checkBox = {
     borderRadius: '4px'
 }
 
-function MensProducts() {
+function WomensProducts() {
 
     const [searchText, setSearchText] = useState("");
     const [selectedPrices, setSelectedPrices] = useState([]);
     const [selectedTypes, setSelectedTypes] = useState([]);
 
-    // SEARCH FILTER FUNCTIONALITY BELOW
-    const handleSearchChange = (e) => {
+    const handleSearchChange = (e)=>{
         setSearchText(e.target.value.toLowerCase());
-    };
+    }
 
-    // PRICE FILTER FUNCTIONALITY BELOW
-    const handlePriceChange = (e) => {
-        const value = e.target.value; // This is the value of the checkbox (like "0 - 300")
+    const handleTypeChange = (e)=>{
+        const value = e.target.value;
+        setSelectedTypes((prev)=>{
+           return prev.includes(value) ? prev.filter((item) => item !== value) : [...prev, value];
+        })
+    }
 
-        // Check if that value is already in the list (checkbox was already checked)
-        if (selectedPrices.includes(value)) {
-            // Remove it (user unchecked it)
-            const newPrices = selectedPrices.filter(item => item !== value);
-            setSelectedPrices(newPrices);
-        } else {
-            // Add it (user checked it)
-            const newPrices = [...selectedPrices, value];
-            setSelectedPrices(newPrices);
-        }
-    };
+    const handlePriceChange = (e)=>{
+        const value = e.target.value;
+        setSelectedPrices((prev)=>{
+            return prev.includes(value) ? prev.filter((item)=> item !== value) : [...prev, value]
+        })
+    }
 
-    const filterByPrice = (price) => {
-        // If no filters are selected, include all prices
-        if (selectedPrices.length === 0) {
-            return true;
+    const filterByPrice = (price)=>{
+        if(selectedPrices.length === 0){
+            return true
         }
 
-        // Check each selected price range
-        for (let i = 0; i < selectedPrices.length; i++) {
+        for(let i=0; i<selectedPrices.length; i++){
             const range = selectedPrices[i];
 
-            if (range === "501 & Above") {
-                if (price >= 501) {
+            if (range === "0 - 500") {
+                if (price <= 500) {
                     return true; // price is matched
                 }
-            } else if (range === "0 - 300") {
-                if (price >= 0 && price <= 300) {
-                    return true;
+            }else if(range === "501 - 1000"){
+                if(price >= 501 && price <= 1000){
+                    return true; // price is matched
                 }
-            } else if (range === "301 - 500") {
-                if (price >= 301 && price <= 500) {
+            }else if(range === "1001 & Above"){
+                if(price >= 1001){
                     return true;
                 }
             }
         }
+        
+    }
 
-        // If none of the ranges match
-        return false;
-    };
-
-    // TYPE FILTER FUNCTIONALITY
-
-    const handleTypeChange = (e) => {
-        const value = e.target.value;
-        setSelectedTypes((prev) =>
-            prev.includes(value)
-                ? prev.filter((item) => item !== value)
-                : [...prev, value]
-        );
-    };
-
-
-    const filteredData = menData.filter((item) => {
-        const matchesSearch = item.name.toLowerCase().includes(searchText);
+    const filteredData = womenData.filter((item)=>{
+        const matchesSearch = item.name.toLocaleLowerCase().includes(searchText);
         const matchesPrice = filterByPrice(item.price);
         const matchesType = selectedTypes.length === 0 || selectedTypes.includes(item.type);
 
-        return matchesSearch && matchesPrice && matchesType;
-
-    });
-
+        return matchesSearch && matchesType && matchesPrice;
+    })
 
 
     return (
@@ -92,10 +71,10 @@ function MensProducts() {
             <Header />
             <div className="top-banner-section">
                 <div className="banner-image-block">
-                    <img src={`${process.env.PUBLIC_URL}/mens-fashion.jpg`} alt="Banner Mens Fashion" />
+                    <img src={`${process.env.PUBLIC_URL}/womens-fashion.jpg`} alt="Banner Mens Fashion" />
                 </div>
                 <div className="banner-content-block">
-                    <h2 className="poppins-extrabold-italic">Men's Fashion</h2>
+                    <h2 className="poppins-extrabold-italic">Women's Fashion</h2>
                 </div>
             </div>
             <div className="container">
@@ -111,7 +90,7 @@ function MensProducts() {
                             <div className="col-12 p-0 mb-3">
                                 <div className="price-filter-block">
                                     <div className="filter-heading mb-2">Price</div>
-                                    {["0 - 300", "301 - 500", "501 & Above"].map((range, i) => (
+                                    {["0 - 500", "501 - 1000", "1001 & Above"].map((range, i) => (
                                         <div className="form-check" key={i}>
                                             <label className="form-check-label">
                                                 <input
@@ -129,11 +108,23 @@ function MensProducts() {
                                 </div>
                             </div>
 
-                            {/* <div className="col-12 p-0">
+                            <div className="col-12 p-0">
                                 <div className="price-filter-block mb-3">
                                     <div className="filter-heading mb-2">Type</div>
                                     <div>
-                                        <div className="form-check">
+                                        {
+                                            ["Polo", "Hoodie", "Round Neck", "Dress", "Blouse", "Jeans", "Jumpsuit", "Skirt", "Sweater", "Blazer", "Leggings", "Swimwear", "Pants", "Coat", "T-Shirt"].map((type, i)=>{
+                                                return(
+                                                    <div className="form-check" key={i}>
+                                                    <label className="form-check-label">
+                                                        <input type="checkbox" className="form-check-input"  value={type} onChange={handleTypeChange} checked={selectedTypes.includes(type)} style={checkBox} /> {" "}
+                                                        {type}
+                                                    </label>
+                                                </div>  
+                                                )
+                                            })
+                                        }
+                                        {/* <div className="form-check">
                                             <label className="form-check-label" htmlFor="hoodies">
                                                 <input type="checkbox" className="form-check-input" id="hoodies" name="hoodies" value="Hoodies" style={checkBox} /> Hoodies
                                             </label>
@@ -162,15 +153,15 @@ function MensProducts() {
                                             <label className="form-check-label" htmlFor="sweat-shirt">
                                                 <input type="checkbox" className="form-check-input" id="sweat-shirt" name="sweat-shirt" value="Sweat Shirt" style={checkBox} /> Sweat Shirt
                                             </label>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
-                            </div> */}
+                            </div>
                             {/* {Type Filter} */}
 
-                            <div className="col-12 p-0 mb-3">
+                            {/* <div className="col-12 p-0 mb-3">
                                 <div className="price-filter-block">
-                                    <div className="filter-heading mb-2">Type</div>
+                                    <div className="filter-heading mb-2">Price</div>
                                     {["Hoodies", "Jacket", "T-Shirt", "Casual Shirt", "Formal Shirt", "Sweat Shirt"].map((type, i) => (
                                         <div className="form-check" key={i}>
                                             <label className="form-check-label">
@@ -187,7 +178,7 @@ function MensProducts() {
                                         </div>
                                     ))}
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="col-8 col-sm-9">
                             <div className="row">
@@ -229,4 +220,4 @@ function MensProducts() {
     )
 }
 
-export default MensProducts;
+export default WomensProducts;

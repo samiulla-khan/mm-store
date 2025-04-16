@@ -26,7 +26,7 @@ function Header() {
                             </Link>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenua">
                                 <li><Link className="dropdown-item" to="/mensproducts">Men</Link></li>
-                                <li><Link className="dropdown-item" to="https://example.com/">Women</Link>
+                                <li><Link className="dropdown-item" to="/womensproducts">Women</Link>
                                 </li>
                             </ul>
                         </li>
