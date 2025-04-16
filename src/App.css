@@ -389,6 +389,10 @@ button.navbar-toggler {
   .btn-green{
     font-size: 13px !important;
   }
+
+  .filter-title-block h3{
+    margin-left: 5px;
+  }
   
 }
 
