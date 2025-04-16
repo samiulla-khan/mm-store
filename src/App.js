@@ -1,14 +1,16 @@
 import './App.css';
-import Header from './components/Header';
-import SliderComponent from './components/Slider';
-import Products from './components/Products';
+import { Routes, Route } from 'react-router-dom';
+import LandingPage from './pages/LandingPage';
+import MenProducts from './pages/MensProducts';
 
 function App() {
   return (
     <div className="App">
-        <Header />
-        <SliderComponent />
-        <Products />
+          <Routes>
+            <Route path='/' element={<LandingPage />} />
+            <Route path="/mensproducts" element={<MenProducts />} />
+
+          </Routes>
         
     </div>
   );

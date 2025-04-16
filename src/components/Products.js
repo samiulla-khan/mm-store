@@ -2,8 +2,6 @@ import React from "react";
 import apiData from '../api/data.js'
 
 function Products() {
-
-
     return (
         <div className="container">
             <div className="products-container">

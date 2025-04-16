@@ -102,7 +102,9 @@
   --green: #004d40;
   --lightgreen: #a9ba5a;
   --white: #fff;
-  --lightgray: #a9a9a9;
+  --gray: #a9a9a9;
+  --lightgray: #f5f5f5;
+  --lightergray: #66666628;
   --lightblue: #56a9ff;
   --black: #000;
 }
@@ -244,7 +246,106 @@ button.navbar-toggler {
   color: var(--black) !important;
 }
 
+.goto-arrow{
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 1.8rem;
+  display: inline;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  align-self: stretch;
+  line-height: 24px;
+}
+.goto-arrow:hover{
+  background-color: var(--lightgreen);
+  color: var(--black);
+}
 
+.product-landing-pages .top-banner-section {
+  margin-top: 75px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.product-landing-pages .top-banner-section .banner-image-block img{
+  width: 100%;
+  height: auto;
+}
+.product-landing-pages .top-banner-section .banner-content-block {
+  position: absolute !important;
+  top: 50%;
+  left: 0;
+  background: rgba(0, 0, 0.6, 0.6);
+  width: 100%;
+  padding: 20px;
+  color: var(--white);
+  text-align: center;
+  border: 2px solid var(--lightgreen);
+  border-radius: 5px;
+}
+
+.product-landing-pages .top-banner-section .banner-content-block h2{
+  text-shadow: 0px 6px 2px var(--green);
+}
+
+.products-container input.form-control{
+  width: 50%;
+  float: right;
+  margin-bottom: 16px;
+  border: 1px solid var(--green);
+  color: var(--green);
+}
+.products-container input.form-control:focus{
+  box-shadow:  0 0 .25rem var(--green);
+}
+
+.filter-title-block{
+  background-color: var(--green);
+  color: var(--white);
+  border: 1px solid var(--lightgreen);
+  border-radius: 3px;
+  padding: 10px;
+}
+.filter-title-block img{
+  max-width: 20px;
+  max-height: 20px;
+  width: 100%;
+  height: 100%;
+}
+.filter-title-block h3{
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.price-filter-block{
+  border: 1px solid var(--lightgreen);
+  border-radius: 2px;
+  padding: 5px 10px;
+}
+
+.footer-section{
+  background-color: var(--green);
+  color: var(--white);
+  margin-top: 35px;
+}
+
+.footer-section .socials-block .social-icon img{
+  max-width: 50px;
+  width: 100%;
+}
+
+.footer-section .socials-block .social-icon{
+  margin: 16px;
+
+}
+
+.footer-copyright{
+  background-color: var(--lightergray);
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+  
+}
 
 @media (min-width: 320px) and (max-width: 575px) {
   .navbar-nav .nav-item:nth-child(1) {
