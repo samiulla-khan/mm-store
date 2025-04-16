@@ -101,7 +101,7 @@ function MensProducts() {
             <div className="container">
                 <div className="products-container">
                     <div className="row">
-                        <div className="col-4 col-sm-3">
+                        <div className="col-5 col-sm-3">
                             <div className="col-12 d-flex flex-row align-items-center justify-content-around filter-title-block mb-3">
                                 <img src={`${process.env.PUBLIC_URL}/ic-filter.png`} alt="Banner Mens Fashion" />
                                 <h3 className="poppins-medium">Fliter Products</h3>
@@ -189,7 +189,7 @@ function MensProducts() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-8 col-sm-9">
+                        <div className="col-7 col-sm-9">
                             <div className="row">
                                 <div className="px-2 px-sm-3">
                                     <input className="form-control mr-sm-2" type="text" placeholder="Search" value={searchText} onChange={handleSearchChange} />
