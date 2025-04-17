@@ -4,6 +4,7 @@ import LandingPage from './pages/LandingPage';
 import MenProducts from './pages/MensProducts';
 import WomensProducts from './pages/WomensProduts';
 import ComingSoon from './components/ComingSoon';
+import ScrollToTop from './components/ScrollToTop';
 
 import MenProductDetails from './pages/MenProductDetailPage';
 import WomenProductDetails from './pages/WomenProductDetailPage';
@@ -11,6 +12,7 @@ import WomenProductDetails from './pages/WomenProductDetailPage';
 function App() {
   return (
     <div className="App">
+          <ScrollToTop />
           <Routes>
             <Route path='/' element={<LandingPage />} />
             <Route path="/mensproducts" element={<MenProducts />} />
