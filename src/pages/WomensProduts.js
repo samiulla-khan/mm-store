@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import womenData from "../api/womenData";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const checkBox = {
     border: '1px solid #a9ba5a',
@@ -124,61 +125,9 @@ function WomensProducts() {
                                                 )
                                             })
                                         }
-                                        {/* <div className="form-check">
-                                            <label className="form-check-label" htmlFor="hoodies">
-                                                <input type="checkbox" className="form-check-input" id="hoodies" name="hoodies" value="Hoodies" style={checkBox} /> Hoodies
-                                            </label>
-                                        </div>
-                                        <div className="form-check">
-                                            <label className="form-check-label" htmlFor="jacket">
-                                                <input type="checkbox" className="form-check-input" id="jacket" name="jacket" value="Jacket" style={checkBox} />Jacket
-                                            </label>
-                                        </div>
-                                        <div className="form-check">
-                                            <label className="form-check-label" htmlFor="t-shirt">
-                                                <input type="checkbox" className="form-check-input" id="t-shirt" name="t-shirt" value="T-Shirt" style={checkBox} /> T-Shirt
-                                            </label>
-                                        </div>
-                                        <div className="form-check">
-                                            <label className="form-check-label" htmlFor="casual-shirt">
-                                                <input type="checkbox" className="form-check-input" id="casual-shirt" name="casual-shirt" value="Casual Shirt" style={checkBox} /> Casual Shirt
-                                            </label>
-                                        </div>
-                                        <div className="form-check">
-                                            <label className="form-check-label" htmlFor="formal-shirt">
-                                                <input type="checkbox" className="form-check-input" id="formal-shirt" name="formal-shirt" value="Formal Shirt" style={checkBox} /> Formal Shirt
-                                            </label>
-                                        </div>
-                                        <div className="form-check">
-                                            <label className="form-check-label" htmlFor="sweat-shirt">
-                                                <input type="checkbox" className="form-check-input" id="sweat-shirt" name="sweat-shirt" value="Sweat Shirt" style={checkBox} /> Sweat Shirt
-                                            </label>
-                                        </div> */}
                                     </div>
                                 </div>
                             </div>
-                            {/* {Type Filter} */}
-
-                            {/* <div className="col-12 p-0 mb-3">
-                                <div className="price-filter-block">
-                                    <div className="filter-heading mb-2">Price</div>
-                                    {["Hoodies", "Jacket", "T-Shirt", "Casual Shirt", "Formal Shirt", "Sweat Shirt"].map((type, i) => (
-                                        <div className="form-check" key={i}>
-                                            <label className="form-check-label">
-                                                <input
-                                                    type="checkbox"
-                                                    className="form-check-input"
-                                                    value={type}
-                                                    onChange={handleTypeChange}
-                                                    checked={selectedTypes.includes(type)}
-                                                    style={checkBox}
-                                                />{" "}
-                                                {type}
-                                            </label>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div> */}
                         </div>
                         <div className="col-7 col-sm-9">
                             <div className="row">
@@ -201,7 +150,9 @@ function WomensProducts() {
 
                                                         </div>
                                                         <div>
-                                                            <button className="btn btn-green">View Product</button>
+                                                            <Link to={`/women/${item.id}`}>
+                                                                <button className="btn btn-green">View Product</button>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
