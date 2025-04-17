@@ -1,12 +1,13 @@
 import React from "react";
 import '../App';
 import { Link } from "react-router-dom";
+// import ComingSoon from "./ComingSoon";
 
 function Header() {
     return (
         <div className="header-section fixed-top">
             <div className="container">
-                <nav className="navbar navbar-expand-sm">
+                <nav className="navbar navbar-expand-md">
                     <div className="logo-section">
                         <Link className="navbar-brand" to="/">
                             {/* <img src="mmlogo.png" alt="brand logo" /> */}
@@ -37,20 +38,20 @@ function Header() {
                             <Link className="nav-link" to="/books">Education</Link>
                         </li> */}
                         <li className="nav-item">
-                            <Link className="nav-link" to="https://example.com/">Electronics</Link>
+                            <Link className="nav-link" to="/inprogress">Electronics</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="https://example.com/">Appliances</Link>
+                            <Link className="nav-link" to="/inprogress">Appliances</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="https://example.com/">Furnitures</Link>
+                            <Link className="nav-link" to="/inprogress">Furnitures</Link>
                         </li>
                     </ul>
                     <div className="px-2 px-sm-3">
                         <input className="form-control mr-sm-2" type="text" placeholder="Search" />
                     </div>
                     <div className="mx-2">
-                        <Link className="nav-link d-inline" to="https://example.com/">Cart</Link>
+                        <Link className="nav-link d-inline" to="/inprogress">Cart</Link>
                         <span className="mx-2">0</span>
                     </div>
                 </div>

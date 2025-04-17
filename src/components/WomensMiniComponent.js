@@ -33,7 +33,9 @@ function WomensMiniComponent() {
 
                                                 </div>
                                                 <div>
-                                                    <button className="btn btn-green">View Product</button>
+                                                    <Link to={`women/${item.id}`}>
+                                                        <button className="btn btn-green">View Product</button>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>

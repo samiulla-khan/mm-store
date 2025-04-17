@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import menData from "../api/menData";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const checkBox = {
     border: '1px solid #a9ba5a',
@@ -210,7 +211,9 @@ function MensProducts() {
 
                                                         </div>
                                                         <div>
-                                                            <button className="btn btn-green">View Product</button>
+                                                            <Link to={`/men/${item.id}`}>
+                                                                <button className="btn btn-green">View Product</button>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>

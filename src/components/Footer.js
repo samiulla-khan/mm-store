@@ -14,13 +14,13 @@ function Footer() {
                             </a>
                         </div>
                         <div className="social-icon">
-                            <a className="social-icons" href="/">
-                                <img src={`${process.env.PUBLIC_URL}/linkedin.png`} alt="brand Logo" />
+                            <a className="social-icons" href="https://www.linkedin.com/in/samiulla-khan-17013522a" target="_blank" rel="noopener noreferrer">
+                                <img src={`${process.env.PUBLIC_URL}/linkedin.png`} alt="Linked Logo" />
                             </a>
                         </div>
                         <div className="social-icon">
-                            <a className="social-icons" href="/">
-                                <img src={`${process.env.PUBLIC_URL}/gmail.png`} alt="brand Logo" />
+                            <a className="social-icons" href="mailto:samiullakhan.mm@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <img src={`${process.env.PUBLIC_URL}/gmail.png`} alt="Gmail Logo" />
                             </a>
                         </div>
                     </div>

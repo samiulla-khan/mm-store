@@ -7,6 +7,7 @@ const menData = [{
     "price": "299",
     "currency": "INR",
     "gender": "Men",
+    "colour": "blue",
     "quantity": 3,
     "description": "A comfortable and stylish sporty t-shirt with moisture-wicking fabric."
 },
@@ -19,6 +20,7 @@ const menData = [{
     "price": "499",
     "currency": "INR",
     "gender": "Men",
+    "colour": "Navy Blue",
     "quantity": 3,
     "description": "A classic fit dress shirt made from high-quality fabric, suitable for formal occasions."
 },
@@ -31,6 +33,7 @@ const menData = [{
     "price": "59.50",
     "currency": "INR",
     "gender": "Men",
+    "colour": "Mulity colours",
     "quantity": 1,
     "description": "Slim fit jeans with a modern look, perfect for casual outings."
 },
@@ -44,6 +47,7 @@ const menData = [{
     "currency": "INR",
     "gender": "Men",
     "quantity": 3,
+    "colour": "Black",
     "description": "A classic polo shirt with the iconic Ralph Lauren logo, ideal for a refined casual look."
 },
 {
@@ -56,6 +60,7 @@ const menData = [{
     "currency": "INR",
     "gender": "Men",
     "quantity": 0,
+    "colour": "Green",
     "description": "A versatile softshell jacket designed for outdoor activities and everyday wear."
 },
 {
@@ -68,6 +73,7 @@ const menData = [{
     "currency": "INR",
     "gender": "Men",
     "quantity": 3,
+    "colour": "White",
     "description": "Lightweight and breathable mesh shorts for workouts and active lifestyles."
 },
 {
@@ -80,6 +86,7 @@ const menData = [{
     "currency": "INR",
     "gender": "Men",
     "quantity": 0,
+    "colour": "Blue",
     "description": "A classic crewneck sweater made from soft and comfortable materials."
 },
 {
@@ -92,6 +99,7 @@ const menData = [{
     "currency": "INR",
     "gender": "Men",
     "quantity": 1,
+    "colour": "Black",
     "description": "A modern-fit suit crafted with attention to detail, perfect for formal occasions."
 },
 {
@@ -104,6 +112,7 @@ const menData = [{
     "currency": "INR",
     "gender": "Men",
     "quantity": 6,
+    "colour": "Oliv Green",
     "description": "A comfortable and stylish hoodie with the Adidas logo, suitable for everyday wear."
 },
 {
@@ -116,6 +125,7 @@ const menData = [{
     "currency": "INR",
     "gender": "Men",
     "quantity": 2,
+    "colour": "Black",
     "description": "Versatile chino pants with a modern slim fit, suitable for casual and semi-formal occasions."
 },
 {
@@ -128,6 +138,7 @@ const menData = [{
     "currency": "INR",
     "gender": "Men",
     "quantity": 7,
+    "colour": "Black",
     "description": "Durable and comfortable swim trunks designed for performance and comfort in the water."
 },
 {
@@ -140,6 +151,7 @@ const menData = [{
     "currency": "INR",
     "gender": "Men",
     "quantity": 6,
+    "colour": "Black",
     "description": "A timeless classic blazer suitable for both professional and smart-casual looks."
 },
 {
@@ -149,7 +161,7 @@ const menData = [{
     "type": "Polo",
     "price": 250,
     "currency": "INR",
-    "color": "Black",
+    "colour": "Black",
     "gender": "Men",
     "quantity": 3,
     "description": "A timeless classic blazer suitable for both professional and smart-casual looks."
@@ -161,7 +173,7 @@ const menData = [{
     "type": "Hoodie",
     "price": 500,
     "currency": "INR",
-    "color": "Black",
+    "colour": "Black",
     "gender": "Men",
     "quantity": 2,
     "description": "A comfortable and stylish sporty t-shirt with moisture-wicking fabric."
@@ -173,7 +185,7 @@ const menData = [{
     "type": "Polo",
     "price": 250,
     "currency": "INR",
-    "color": "Green",
+    "colour": "Green",
     "gender": "Men",
     "quantity": 1,
     "description": "A classic fit dress shirt made from high-quality fabric, suitable for formal occasions."
@@ -185,7 +197,7 @@ const menData = [{
     "type": "Basic",
     "price": 300,
     "currency": "INR",
-    "color": "Blue",
+    "colour": "Blue",
     "gender": "Men",
     "quantity": 2,
     "description": "Slim fit jeans with a modern look, perfect for casual outings."
@@ -197,7 +209,7 @@ const menData = [{
     "type": "Basic",
     "price": 300,
     "currency": "INR",
-    "color": "Grey",
+    "colour": "Grey",
     "gender": "Men",
     "quantity": 1,
     "description": "A classic polo shirt with the iconic Ralph Lauren logo, ideal for a refined casual look."
@@ -209,7 +221,7 @@ const menData = [{
     "type": "Basic",
     "price": 300,
     "currency": "INR",
-    "color": "Black",
+    "colour": "Black",
     "gender": "Men",
     "quantity": 7,
     "description": "A versatile softshell jacket designed for outdoor activities and everyday wear."
@@ -221,7 +233,7 @@ const menData = [{
     "type": "Basic",
     "price": 300,
     "currency": "INR",
-    "color": "Purple",
+    "colour": "Purple",
     "gender": "Men",
     "quantity": 1,
     "description": "Lightweight and breathable mesh shorts for workouts and active lifestyles."
@@ -233,7 +245,7 @@ const menData = [{
     "type": "Basic",
     "price": 300,
     "currency": "INR",
-    "color": "White",
+    "colour": "White",
     "gender": "Men",
     "quantity": 2,
     "description": "A classic crewneck sweater made from soft and comfortable materials."
@@ -245,7 +257,7 @@ const menData = [{
     "type": "Polo",
     "price": 250,
     "currency": "INR",
-    "color": "Red",
+    "colour": "Red",
     "gender": "Men",
     "quantity": 2,
     "description": "A modern-fit suit crafted with attention to detail, perfect for formal occasions."
@@ -257,7 +269,7 @@ const menData = [{
     "type": "Hoodie",
     "price": 500,
     "currency": "INR",
-    "color": "Blue",
+    "colour": "Blue",
     "gender": "Men",
     "quantity": 0,
     "description": "A comfortable and stylish hoodie with the Adidas logo, suitable for everyday wear."
@@ -269,7 +281,7 @@ const menData = [{
     "type": "Hoodie",
     "price": 500,
     "currency": "INR",
-    "color": "Grey",
+    "colour": "Grey",
     "gender": "Men",
     "quantity": 2,
     "description": "Versatile chino pants with a modern slim fit, suitable for casual and semi-formal occasions."
@@ -281,7 +293,7 @@ const menData = [{
     "type": "Polo",
     "price": 300,
     "currency": "INR",
-    "color": "Grey",
+    "colour": "Grey",
     "gender": "Men",
     "quantity": 3,
     "description": "Durable and comfortable swim trunks designed for performance and comfort in the water."
@@ -293,7 +305,7 @@ const menData = [{
     "type": "Hoodie",
     "price": 300,
     "currency": "INR",
-    "color": "Red",
+    "colour": "Red",
     "gender": "Men",
     "quantity": 0,
     "description": "A timeless classic blazer suitable for both professional and smart-casual looks."
@@ -305,7 +317,7 @@ const menData = [{
     "type": "Polo",
     "price": 300,
     "currency": "INR",
-    "color": "White",
+    "colour": "White",
     "gender": "Men",
     "quantity": 1,
     "description": "A timeless classic blazer suitable for both professional and smart-casual looks."
@@ -317,7 +329,7 @@ const menData = [{
     "type": "Basic",
     "price": 300,
     "currency": "INR",
-    "color": "Grey",
+    "colour": "Grey",
     "gender": "Men",
     "quantity": 0,
     "description": "A classic fit dress shirt made from high-quality fabric, suitable for formal occasions."

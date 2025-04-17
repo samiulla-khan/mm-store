@@ -150,7 +150,7 @@ button.navbar-toggler {
   border: 2px solid #000;
 }
 
-.slider-section{
+.slider-section, .product-details-section{
   background-image: radial-gradient(circle, #ffc40089, #ff910089, #004d4089);
   margin-top: 75px;
 }
@@ -335,7 +335,7 @@ button.navbar-toggler {
 .footer-section{
   background-color: var(--green);
   color: var(--white);
-  margin-top: 35px;
+  /* margin-top: 35px; */
 }
 
 .footer-section .socials-block .social-icon img{
@@ -355,6 +355,45 @@ button.navbar-toggler {
   text-align: center;
   
 }
+
+.product-details-section .prodcut-detail{
+  padding: 20px;
+}
+.product-details-section .product-detail-image-block img{
+  width: 100%;
+}
+.product-details-section .product-detail-content-block h2{
+  color: var(--green);
+  text-shadow: 2px 2px 2px var(--lightgreen);
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  max-width: 300px;
+  width: 100%;
+}
+
+/* .product-details-section{
+  height: 60vh;
+} */
+
 
 @media (min-width: 320px) and (max-width: 575px) {
   .navbar-nav .nav-item:nth-child(1) {
@@ -399,5 +438,14 @@ button.navbar-toggler {
 @media (min-width: 576px) and (max-width: 998px) {
   .products-container input.form-control{
     width: 75%;
+  }
+ 
+  .slider-section .slides .slide .slider-image-block img{
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .slider-section .slides .slide .slider-content-block h1{
+    font-size: 50px;
+    line-height: 50px;
   }
 }
