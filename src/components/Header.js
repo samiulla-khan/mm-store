@@ -2,8 +2,10 @@ import React from "react";
 import '../App';
 import { Link } from "react-router-dom";
 // import ComingSoon from "./ComingSoon";
+import { useCart } from "./CartContext";
 
 function Header() {
+    const {cartItems} = useCart();
     return (
         <div className="header-section fixed-top">
             <div className="container">
@@ -51,8 +53,12 @@ function Header() {
                         <input className="form-control mr-sm-2" type="text" placeholder="Search" />
                     </div>
                     <div className="mx-2">
-                        <Link className="nav-link d-inline" to="/inprogress">Cart</Link>
-                        <span className="mx-2">0</span>
+                        <Link className="nav-link d-inline" to="/cart">Cart</Link>
+                        <span className="mx-2">
+                            {
+                                cartItems.length > 0 ? cartItems.length : 0
+                            }
+                        </span>
                     </div>
                 </div>
                 </nav>

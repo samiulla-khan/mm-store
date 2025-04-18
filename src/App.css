@@ -150,7 +150,7 @@ button.navbar-toggler {
   border: 2px solid #000;
 }
 
-.slider-section, .product-details-section{
+.slider-section, .product-details-section, .add-to-cart-section{
   background-image: radial-gradient(circle, #ffc40089, #ff910089, #004d4089);
   margin-top: 75px;
 }
@@ -393,6 +393,27 @@ button.navbar-toggler {
 /* .product-details-section{
   height: 60vh;
 } */
+.and-cart-section .prodcut-detail{
+  margin-top: 40px;
+}
+
+.add-to-cart-section .cart-detail{
+  min-height: 50vh;
+}
+.add-to-cart-section .cart-detail .add-to-cart-content-block .cart-items-block{
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+.add-to-cart-section .cart-detail .add-to-cart-content-block .cart-items-block .cart-item{
+  border: 1px solid var(--green);
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+.add-to-cart-section .cart-detail .add-to-cart-content-block .cart-items-block .cart-item h2{
+  color: var(--green);
+  text-shadow: 2px 2px 2px var(--lightgreen);
+}
+
 
 
 @media (min-width: 320px) and (max-width: 575px) {

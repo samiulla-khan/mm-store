@@ -1,22 +1,25 @@
-import React, {useState} from "react";
+import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useParams } from "react-router-dom";
 import womenData from "../api/womenData";
+import { useCart } from "../components/CartContext";
 
 function WomenProductDetails(){
     const {id} = useParams();
     const productId = parseInt(id);
     const product = womenData.find((item)=> item.id === productId);
-    const [showPopup, setShowPopup] = useState(false);
+    // const [showPopup, setShowPopup] = useState(false);
 
-    const openPopUp = () => {
-        setShowPopup(true);
-    };
+    // const openPopUp = () => {
+    //     setShowPopup(true);
+    // };
 
-    const closePopUp = () => {
-        setShowPopup(false);
-    };
+    // const closePopUp = () => {
+    //     setShowPopup(false);
+    // };
+
+    const {addToCart} = useCart()
 
     return (
         <>
@@ -36,7 +39,7 @@ function WomenProductDetails(){
                                     <p className="poppins-medium">Available Quantity : {product.quantity} </p>
                                     <p className="poppins-regular"><span className="poppins-medium">About Product :</span> {product.description}</p>
                                     <div>
-                                        <button className="btn btn-green" onClick={openPopUp}>Add to Cart</button>
+                                        <button className="btn btn-green" onClick={()=>{addToCart(product)}}>Add to Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -48,14 +51,14 @@ function WomenProductDetails(){
             </div>
 
             {/* Pop Up Related Code here */}
-            {showPopup && (
+            {/* {showPopup && (
                 <div className="popup-overlay">
                     <div className="popup-box">
                         <p>This feature is in progress...</p>
                         <button onClick={closePopUp} className="btn btn-green">Close</button>
                     </div>
                 </div>
-            )}
+            )} */}
 
             <Footer />
         </>

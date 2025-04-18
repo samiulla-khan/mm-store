@@ -5,6 +5,7 @@ import MenProducts from './pages/MensProducts';
 import WomensProducts from './pages/WomensProduts';
 import ComingSoon from './components/ComingSoon';
 import ScrollToTop from './components/ScrollToTop';
+import Cart from './components/Cart';
 
 import MenProductDetails from './pages/MenProductDetailPage';
 import WomenProductDetails from './pages/WomenProductDetailPage';
@@ -20,7 +21,7 @@ function App() {
               <Route path='men/:id' element={<MenProductDetails />} />
               <Route path='women/:id' element={<WomenProductDetails />} />
               <Route path='inprogress' element={<ComingSoon />} />
-
+              <Route path='/cart' element={<Cart />} />
           </Routes>
         
     </div>
