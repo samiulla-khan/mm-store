@@ -20,6 +20,7 @@ function App() {
             <Route path='/' element={<LandingPage />} />
             <Route path="/mensproducts" element={<MenProducts />} />
             <Route path="/womensproducts" element={<WomensProducts />} />
+            <Route path="/mobileproducts" element={<MobilesProducts />} />
             <Route path='/mobiles' element={<MobilesProducts />} />
               <Route path='men/:id' element={<MenProductDetails />} />
               <Route path='women/:id' element={<WomenProductDetails />} />

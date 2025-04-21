@@ -13,7 +13,7 @@ function MobileMiniComponent() {
                             <h4 className="poppins-bold">Mobile's</h4>
                         </div>
                         <div className="col-2 d-flex align-items-center justify-content-end">
-                            <Link to="/mensproducts" className="poppins-bold goto-arrow" style={{ textDecoration: 'none' }}>
+                            <Link to="/mobileproducts" className="poppins-bold goto-arrow" style={{ textDecoration: 'none' }}>
                                 &#8250;
                             </Link>
                         </div>
