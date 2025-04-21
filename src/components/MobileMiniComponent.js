@@ -33,7 +33,7 @@ function MobileMiniComponent() {
 
                                                 </div>
                                                 <div>
-                                                    <Link to={`/men/${item.id}`}>
+                                                    <Link to={`/mobile/${item.id}`}>
                                                         <button className="btn btn-green">View Product</button>
                                                     </Link>
                                                 </div>
