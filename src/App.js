@@ -11,6 +11,8 @@ import MenProductDetails from './pages/MenProductDetailPage';
 import WomenProductDetails from './pages/WomenProductDetailPage';
 import MobilesProducts from './pages/MobilesProducts';
 import MobilesProductDetailPage from './pages/MobileProductDetailPage';
+import Electronics from './pages/ElectronicProducts';
+
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
             <Route path="/mensproducts" element={<MenProducts />} />
             <Route path="/womensproducts" element={<WomensProducts />} />
             <Route path="/mobileproducts" element={<MobilesProducts />} />
+            <Route path="/electronics" element={<Electronics />} />
             <Route path='/mobiles' element={<MobilesProducts />} />
               <Route path='men/:id' element={<MenProductDetails />} />
               <Route path='women/:id' element={<WomenProductDetails />} />

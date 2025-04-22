@@ -6,6 +6,9 @@ import MensMiniComponent from "../components/MensMiniComponent";
 import WomensMiniComponent from "../components/WomensMiniComponent";
 import Footer from "../components/Footer";
 import MobileMiniComponent from "../components/MobileMiniComponent";
+import ElectronicsMiniComponent from "../components/ElectronicsMiniComponent";
+
+
 
 function LandingPage() {
   return (
@@ -16,6 +19,7 @@ function LandingPage() {
         <MensMiniComponent />
         <WomensMiniComponent />
         <MobileMiniComponent />
+        <ElectronicsMiniComponent />
       </div>
       <Footer />
     </div>
