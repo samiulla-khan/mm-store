@@ -282,7 +282,7 @@ button.navbar-toggler {
 }
 .product-landing-pages .top-banner-section .banner-content-block {
   position: absolute !important;
-  top: 50%;
+  top: 40%;
   left: 0;
   background: rgba(0, 0, 0.6, 0.6);
   width: 100%;
@@ -404,6 +404,11 @@ button.navbar-toggler {
   max-width: 500px;
   margin-bottom: 50px;
 }
+.add-to-cart-section .cart-detail .add-to-cart-content-block > h2{
+  color: var(--green);
+  text-shadow: 2px 2px 2px var(--lightgreen);
+  margin: 30px 0;
+}
 .add-to-cart-section .cart-detail .add-to-cart-content-block .cart-items-block .cart-item{
   border: 1px solid var(--green);
   border-radius: 5px;
@@ -456,6 +461,9 @@ button.navbar-toggler {
   .product-details-section .product-detail-content-block {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .product-landing-pages .top-banner-section .banner-content-block{
+    top: 20%;
   }
   
 }

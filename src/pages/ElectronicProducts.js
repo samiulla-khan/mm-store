@@ -13,6 +13,7 @@ function Electronics() {
     const [searchText, setSearchText] = useState("");
     const [selectedProducts, setselectedProducts] = useState([]);
     const [selectedBrands, setselectedBrands] = useState([]);
+    const [selectedPrices, setSelectedPrices] = useState([]);
 
     const handleSearch = (e) => {
         setSearchText(e.target.value.toLowerCase());
@@ -38,12 +39,46 @@ function Electronics() {
 
     }
 
+    const handlePriceChange = (e)=>{
+        const value = e.target.value;
+
+        setSelectedPrices((prev)=>{
+           return prev.includes(value) ? prev.filter((item)=> item !== value) : [...prev, value]
+        })
+    }
+
+    const filterByPrice = (price)=>{
+        if(selectedPrices.length === 0){
+            return true
+        }
+
+        for(let i = 0; i<selectedPrices.length; i++){
+            const range = selectedPrices[i];
+
+            if(range === '20001 & Above'){
+                if (price >= 20001) {
+                    return true; // price is matched
+                }
+            }else if(range === '0 - 10000'){
+               if(price > 0 && price <= 10000){
+                return true
+               }
+            }else if(range === '10001 - 20000'){
+                debugger
+                if(price >= 10001 && price <= 20000){
+                    return true
+                }
+            }
+        }
+    }
+
     const filteredData = electronicsData.filter((item) => {
         const matchesSearch = item.name.toLowerCase().includes(searchText);
         const matchesProduct = selectedProducts.length === 0 || selectedProducts.includes(item.product)
-        const matchesBrand = selectedBrands.length === 0 || selectedBrands.includes(item.brand)
+        const matchesBrand = selectedBrands.length === 0 || selectedBrands.includes(item.brand);
+        const matchesPrice = filterByPrice(item.price);
 
-        return matchesSearch && matchesProduct && matchesBrand;
+        return matchesSearch && matchesProduct && matchesBrand && matchesPrice;
     })
 
 
@@ -115,6 +150,27 @@ function Electronics() {
                                 </div>
                             </div>
 
+                            {/* {Price Filter} */}
+                            <div className="col-12 p-0 mb-3">
+                                <div className="price-filter-block">
+                                    <div className="filter-heading mb-2">Price</div>
+                                    {["0 - 10000", "10001 - 20000", "20001 & Above"].map((range, i) => (
+                                        <div className="form-check" key={i}>
+                                            <label className="form-check-label">
+                                                <input
+                                                    type="checkbox"
+                                                    className="form-check-input"
+                                                    value={range}
+                                                    onChange={handlePriceChange}
+                                                    checked={selectedPrices.includes(range)}
+                                                    style={checkBox}
+                                                />{" "}
+                                                &#8377; {range}
+                                            </label>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                         <div className="col-7 col-sm-9">
                             <div className="row">
@@ -137,10 +193,7 @@ function Electronics() {
 
                                                         </div>
                                                         <div>
-                                                            {/* <Link to={`/men/${item.id}`}>
-                                                                <button className="btn btn-green">View Product</button>
-                                                            </Link> */}
-                                                            <Link to={`/inprogress`}>
+                                                            <Link to={`/electroinic/${item.id}`}>
                                                                 <button className="btn btn-green">View Product</button>
                                                             </Link>
                                                         </div>

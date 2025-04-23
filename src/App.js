@@ -12,6 +12,7 @@ import WomenProductDetails from './pages/WomenProductDetailPage';
 import MobilesProducts from './pages/MobilesProducts';
 import MobilesProductDetailPage from './pages/MobileProductDetailPage';
 import Electronics from './pages/ElectronicProducts';
+import ElectronicProductDetails from './pages/ElectronicProductDetailPage';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
               <Route path='men/:id' element={<MenProductDetails />} />
               <Route path='women/:id' element={<WomenProductDetails />} />
               <Route path='mobile/:id' element={<MobilesProductDetailPage />} />
+              <Route path='electroinic/:id'element={<ElectronicProductDetails />} />
               <Route path='inprogress' element={<ComingSoon />} />
               <Route path='/cart' element={<Cart />} />
           </Routes>

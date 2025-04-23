@@ -4,7 +4,7 @@ const computerData = [{
     "imageURL": "/assets/Computers/12.jpg",
     "company": "Dell",
     "name": "Inspiron 15",
-    "price": "8999",
+    "price": 8999,
     "category": "Electronics",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
 {
@@ -13,7 +13,7 @@ const computerData = [{
     "imageURL": "/assets/Computers/4.jpg",
     "company": "HP",
     "name": "Pavilion 27",
-    "price": "12990",
+    "price": 12990,
     "category": "Electronics",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
 {
@@ -22,7 +22,7 @@ const computerData = [{
     "imageURL": "/assets/Computers/3.jpg",
     "company": "Apple",
     "name": "MacBook Air",
-    "price": "11990",
+    "price": 11990,
     "category": "Electronics",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
 {
@@ -31,7 +31,7 @@ const computerData = [{
     "imageURL": "/assets/Computers/11.jpg",
     "company": "Lenovo",
     "name": "IdeaPad Flex",
-    "price": "7990",
+    "price": 7990,
     "category": "Electronics",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
 {
@@ -40,7 +40,7 @@ const computerData = [{
     "imageURL": "/assets/Computers/5.jpg",
     "company": "Acer",
     "name": "Predator Helios 300",
-    "price": "12990",
+    "price": 12990,
     "category": "Electronics",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
 {
@@ -49,7 +49,7 @@ const computerData = [{
     "imageURL": "/assets/Computers/6.jpg",
     "company": "Microsoft",
     "name": "Surface Pro 7",
-    "price": "9999",
+    "price": 9999,
     "category": "Electronics",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
 {
@@ -58,7 +58,7 @@ const computerData = [{
     "imageURL": "/assets/Computers/7.jpg",
     "company": "Asus",
     "name": "ZenBook 14",
-    "price": "8990",
+    "price": 8990,
     "category": "Electronics",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
 {
@@ -67,7 +67,7 @@ const computerData = [{
     "imageURL": "/assets/Computers/8.jpg",
     "company": "Alienware",
     "name": "Aurora R10",
-    "price": "1999",
+    "price": 1999,
     "category": "Electronics",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
 {
@@ -76,7 +76,7 @@ const computerData = [{
     "imageURL": "/assets/Computers/9.jpg",
     "company": "HP",
     "name": "EliteBook 840",
-    "price": "1299",
+    "price": 1299,
     "category": "Electronics",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
 {
@@ -85,7 +85,7 @@ const computerData = [{
     "imageURL": "/assets/Computers/10.jpg",
     "company": "Lenovo",
     "name": "ThinkCentre M720",
-    "price": "7990",
+    "price": 7990,
     "category": "Electronics",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
 {
@@ -94,7 +94,7 @@ const computerData = [{
     "imageURL": "/assets/Computers/2.jpg",
     "company": "Dell",
     "name": "XPS 13",
-    "price": "14990",
+    "price": 14990,
     "category": "Electronics",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."},
 {
@@ -103,7 +103,7 @@ const computerData = [{
     "imageURL": "/assets/Computers/1.jpg",
     "company": "Acer",
     "name": "Chromebook 14",
-    "price": "34999",
+    "price": 34999,
     "category": "Electronics",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 }
